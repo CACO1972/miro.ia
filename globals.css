@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Monda';
+  src: url('/fonts/Monda.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  @apply bg-dark text-whiteMate font-monda;
+}
+
+/* Campos minimalistas */
+.field {
+  @apply w-full rounded-lg bg-[#0b1220] border border-white/10 px-3 py-3 text-whiteMate placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neon/60;
+}
+
+.btn-neon {
+  @apply rounded-full px-6 py-3 font-semibold bg-neon text-dark shadow-[0_0_25px_#00f0ff] hover:scale-105 transition;
+}
